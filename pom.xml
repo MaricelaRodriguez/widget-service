@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<nexus.server>10.165.61.131:8081/nexus</nexus.server>
 	</properties>
 
 	<dependencies>
@@ -71,11 +72,11 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://10.165.61.131:8081/nexus/repository/maven-releases/</url>
+			<url>http://${nexus.server}/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<url>http://10.165.61.131:8081/nexus/repository/maven-snapshots/</url>
+			<url>http://${nexus.server}/nexus/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
