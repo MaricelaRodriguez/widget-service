@@ -76,7 +76,7 @@
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<url>http://${nexus.server}/nexus/repository/maven-snapshots/</url>
+			<url>http://${nexus.server}/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
